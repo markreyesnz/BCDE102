@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>New Zealand Election 2020</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- <script src="src/View.js"></script> -->
+    <script src="src/Election.js"></script>
+    <script src="src/Party.js"></script>
+    <script src="src/Electorate.js"></script>
+    <script src="src/Controller.js"></script>
+</head>
+
+<body>
+  
+<div id="divTitle"></div>
+
+
+<div id="divDisplayParty"></div>
+
+</div>
+
+<div id="divDisplayElectorate"></div>
+
+
+<script>
+var electorate // deliberately GLOBAL for debugging!
+var go = function() {
+    electorate = Controller.setup()
+    document.body.style.fontFamily = 'Courier New'
+
+    document.getElementById('divTitle').innerHTML = `<h1><table border="1px" align="center"><tr><td>${electorate}</td></tr></h1>` 
+
+    document.getElementById('divDisplayParty').innerHTML =  electorate.getPartiesAsHtmlTable()
+
+    document.getElementById('divDisplayElectorate').innerHTML =  electorate.getElectoratesAsHtmlTable()
+
+
+
+    console.log(electorate)
+}
+
+window.onload = go
+</script>
+</body>
+
+</html>

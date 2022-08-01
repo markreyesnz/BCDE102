@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>New Zealand Election 2020</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+  <!-- include source files here... -->
+  <script src="src/Election.js"></script>
+  <script src="src/Controller.js"></script>
+  <script src="src/Party.js"></script>
+  <script src="src/View.js"></script>
+
+
+</head>
+
+<body>
+  <h1>New Zealand Election 2020</h1>
+
+  <script>
+    var theElection
+  
+    function main () {
+      theElection = Controller.setup()
+      console.log(theElection)
+      output(theElection.toTable())
+    }  
+    
+    window.onload = main
+    </script>
+  
+</body>
+</html>
+

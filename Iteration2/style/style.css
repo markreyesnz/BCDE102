@@ -1,0 +1,22 @@
+body {
+    background-color: #FFA500;
+  }
+  h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background: #f9f7f7;
+    margin:30px;
+    font-size:40px;
+    padding: 40px;
+  }
+  p {
+    color: red;
+  }
+
+  table {
+    width : 100%;
+  }
+  table, th, td {
+     border : black solid 1px;
+     border-collapse : collapse;
+  }  

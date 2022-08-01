@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="utf-8"> 
+
+    <title>New Zealand Election 2022</title> 
+
+    <script src="src/Election.js"></script>
+    
+    
+    <script src="src/Controller.js"></script>
+
+<style>
+    h1 {text-align: center;}
+
+</style>
+
+
+</head> 
+
+<body style="background-color:rgb(185, 146, 62);"> 
+
+<div id="divTitle"></div> 
+
+<br> 
+
+<div id="divDisplayParty"></div> 
+
+<br> 
+
+<div id="divDisplayCandidate"></div> 
+
+<br> 
+
+<script>
+
+var electorate 
+
+function go () { 
+
+  electorate = Controller.setup() 
+
+  document.body.style.fontFamily = 'Arial Black' 
+
+  document.getElementById('divTitle').innerHTML =  
+
+    '<h1>' + electorate +'</h1>' 
+
+  console.log(electorate) 
+
+} 
+
+window.onload = go 
+
+</script> 
+
+</body> 
+
+</html> 
