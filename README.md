@@ -1,2 +1,3 @@
 # BCDE102
-Electoral project from the course BCDE102 Introduction to Software Engineering.
+Electoral project using JavaScript, HTML, and CSS.
+Unit Testing conducted using Jasmine framework. 
